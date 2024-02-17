@@ -1,0 +1,57 @@
+
+nav ul li{
+    display: inline-block;
+    background: rgba(8, 47, 131, 0.952);
+    padding: 15px 15px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 5px solid  rgba(8, 47, 131, 0.575);
+}
+
+li:hover{
+    background-color: rgb(0, 74, 212);
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    background: black;
+    color: white;
+    border: 2px solid rgba(8, 47, 131, 0.952);
+}
+
+.Trpincipal {
+    text-align: center;
+    color: black;
+}
+
+body{
+    background: rgba(8, 8, 1, 0.651);
+}
+
+
+#padre{
+    display: flex;
+}
+
+#div1{
+    background: rgba(255, 0, 0, 0.205);
+}
+
+#div2{
+    background: rgba(8, 47, 131, 0.575);
+}

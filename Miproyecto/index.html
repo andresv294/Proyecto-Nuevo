@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<!--En HEAD ponemos <meta name="viewport" content="width=device-width", initial-scale="1.0" /> como tal es para ajustar en la pagina en diferentes dispositivos y tittle para ponerle el nombre en la pestaña del navegador-->
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Andres Velasco</title>
+    <meta name="descripcion" content="Pagina la cual brinda informacion respecto Andres Velasco, un blog publico de Andres Velasco"/>
+    <meta name="autor" content="Andres Velasco"/>
+    <link rel="shortcut icon" href="/Miproyecto/img/hojadvida.ico">
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<!--En BODY ponemos el contenido de nuesra pagina web-->
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="hojadevida.html" target="_blank" title="Alli veras mi hoja de vida">Click aqui</a></li>
+
+                <li><a href="portafolio.html" target="_blank" title="Alli veras mi portafolio">Portafolio</a></li>
+
+                <li><a href="https://www.instagram.com/andres_velasco29/#" target="_blank" title="Alli veras mi instagram">Instagram</a></li>                
+            </ul>
+        </nav>
+        <h1 class="Trpincipal">
+            Hola mundo que tal, esta es mi primera pagina web espero sea de su
+            agrado
+        </h1>
+    </header>
+
+    <section>
+        <audio src="audio.ogg" controls></audio>
+        <br />
+        <img src="/Miproyecto/img/yo.jpg" width="300px" height="300px" title="Concentracion" alt="Andres haciendo parada de manos" />
+    </section>
+    <br />
+
+    <br />
+    <section id="contenido">
+        <h2>Esta pagina web mostrara un poco de mi, cosas que me gustan, datos y mas.</h2>
+        <img src="/Miproyecto/img/exitencia.jpg" srcset="existencia1.png x1, exitencia2.png x2, existencia3.png x3" alt="existencia"
+        title="en mente de Andres" />
+        <h3 id="2">Andres:</h3>
+        <p>
+        La vida es una aventura llena de risas y compañía. Me encanta compartir
+        momentos especiales con amigos y familiares, ya que soy una persona social
+        y extrovertida. Explorar mi pasión por los deportes me mantiene en
+        movimiento y emocionado. Viajar y descubrir nuevos horizontes es mi
+        pasión, siempre en busca de experiencias exóticas y fascinantes. En el
+        ámbito culinario, la carne es mi deleite y los dulces son mi debilidad.
+        Cada bocado es una explosión de sabores que deleita mis sentidos. ¡La vida
+        está hecha para ser disfrutada al máximo!
+        </p>
+        <h2>Lista de los deportes que le gustan</h2>
+        <ul>
+            <li>Futbol</li>
+            <li>Basquetball</li>
+            <li>Natacion</li>
+            <li>Boxeo</li>
+            <li>Calistenia</li>
+        </ul>
+    </section>
+    <!--No entiendo tanto lo de formularios-->
+    <form action="procesar.php" method="post">
+        <label>Nombre:
+            <input type="text" id="nombre" name="nombre" placeholder="pepito perez" required />
+        </label>
+         <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <input type="submit" value="Enviar" />
+    </form>
+    <img src="/Miproyecto/img/deportes.png" alt="deportes" width="300px" height="300px" title="deportes" />
+<br />
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zuo6f_QySXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+<br />
+    <a href="#1" title="Iras al inicio de la pagina">Ir a la seccion 1</a>
+    <br/>
+    <a href="#2" title="Iras al intermedio de la pagina">Ir a la seccion intermedia</a>
+    <br>
+    <br>
+    <h2>¿Tu entrenas?</h2> 
+    <select>
+        <option value="no entreno">no entreno</option>
+        <option value="a veces entreno" selected>a veces entreno</option>
+        <option value="si entreno">si entreno</option>
+    </select>
+    <h2>Cuando hayas finalizado dar click en el boton</h2>
+    <button onclick="miFuncion()">Haz clic</button>
+    <script>
+        function miFuncion() {
+        alert('¡Has hecho clic!');
+        }
+    </script>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam, placeat ad alias, dolorum optio autem magni pariatur nulla nemo labore? Nam, aliquid voluptas accusamus maxime odio quia. Amet, cum?</p>
+<br>
+<br>
+<br>
+<!-- th con negrilla y td sin negrilla -->
+    <h3>Tablas 1</h3>
+        <table border="1">
+                <tr>
+                    <td>Titulo 1</td>
+                    <td>Titulo 2</td>
+                    <td>Titulo 3</td>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                    <td>Celda 3</td>
+                </tr>
+        </table>
+<br>
+<br>
+<br>
+    <h4>Tabla 2</h4>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nombres y apellidos</th>
+                <th>edad</th>
+                <th>especialidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Pepe</th>
+                <th>18</th>
+                <th>Jugar</th>
+            </tr>
+            <tr>
+                <th>carlos</th>
+                <th>20</th>
+                <th>Dormir</th>
+            </tr>
+            <tr>
+                <th>Camilo</th>
+                <th>22</th>
+                <th>Operar</th>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<br>
+    <h5>Tabla 3</h5>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Gaseosa</td>
+                <td>Kola sol</td>
+                <td>$2.500</td>
+            </tr>
+            <tr>
+                <td>Mazana</td>
+                <td>$2.500</td>
+            </tr>
+            <tr>
+                <td>Pepsi</td>
+                <td>$2.800</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Galletas</td>
+                <td>Festival</td>
+                <td>$1.800</td>
+            </tr>
+            <tr>
+                <td>Oreo</td>
+                <td>$2.000</td>
+            </tr>
+            <tr>
+                <td>Milo</td>
+                <td>$2.100</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Dulces</td>
+                <td>Bonbonbum</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Trululu</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Barrilete</td>
+                <td>$400</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<br>
+<!-- EJERCICIOS DE DIVISIONES O CONTENEDORES -->
+    <h1>EJERCICIOS DE DIVISIONES O CONTENEDORES</h1>
+    <div id="padre">
+        <div id="div1">
+            <h2>Contenedor con la etiqueta div</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi animi deleniti facilis. Iste harum, alias mollitia excepturi dolor dolorem explicabo doloremque quibusdam praesentium adipisci debitis, facilis sunt. Ipsam, illum!</p>
+        </div>
+<br>
+        <div id="div2">
+            <h2>Contenedor con la etiqueta div</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi animi deleniti facilis. Iste harum, alias mollitia excepturi dolor dolorem explicabo doloremque quibusdam praesentium adipisci debitis, facilis sunt. Ipsam, illum!</p>
+        </div>
+    </div>
+<br>   
+        <iframe
+         width="560" height="315" src="https://www.youtube.com/embed/MgWaajN_Lh4?si=NiHnqAfY3XLuhltZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+
+
+</body>
+</html>

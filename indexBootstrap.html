@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Primera Pagina Utilizando Bootstrap</h1>
+
+    <!-- <div class="container text-center">
+        <div class="row">
+          <div class="col bg-primary border border-black">
+            Column
+          </div>
+          <div class="col bg-primary-subtle border border-black">
+            Column
+          </div>
+          <div class="col bg-success-subtle border border-black">
+            Column
+          </div>
+        </div>
+    </div>  -->
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">Col - 3</div>
+            <div class="col-sm-12 col-md-3">Col - 3</div>
+            <div class="col-sm-12 col-md-3">Col - 3</div>
+            <div class="col-sm-12 col-md-3">Col - 3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-8">Col - 8</div>
+            <div class="col-sm-12 col-md-4">Col - 4</div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered border-warning table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Aprendiz</th>
+                        <th>Programa de formacion</th>
+                        <th>Ficha</th>
+                        <th>Columna adicional 1</th>
+                        <th>Columna adicional 2</th>
+                        <th>Columna adicional 3</th>
+                    </tr>
+                </thead>
+            <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Fernando Lopez</td>
+                        <td>ADSO</td>
+                        <td>2671117</td>
+                        <td>Columna adicional 1</td>
+                        <td>Columna adicional 2</td>
+                        <td>Columna adicional 3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Paula Chavez</td>
+                        <td>ADSO</td>
+                        <td>2671117</td>
+                        <td>Columna adicional 1</td>
+                        <td>Columna adicional 2</td>
+                        <td>Columna adicional 3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carlos Mora</td>
+                        <td>ADSO</td>
+                        <td>2671117</td>
+                        <td>Columna adicional 1</td>
+                        <td>Columna adicional 2</td>
+                        <td>Columna adicional 3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Andres Velasco</td>
+                        <td>ADSO</td>
+                        <td>2671117</td>
+                        <td>Columna adicional 1</td>
+                        <td>Columna adicional 2</td>
+                        <td>Columna adicional 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="row">
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                </div>
+                
+                <div class="mb-3 col-6 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="mb-3 col-6 ">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+CREATE TABLE escrito_por (
+clavelibro INT NOT NULL,
+claveautor INT NOT NULL,
+FOREIGN KEY (clavelibro)
+REFERENCES libro(clavelibro)
+ON DELETE CASCADE
+ON UPDATE CASCADE,
+FOREIGN KEY (claveautor)
+REFERENCES autor(claveautor)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+) ENGINE=InnoDB;

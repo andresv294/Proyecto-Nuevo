@@ -1,0 +1,94 @@
+:root{
+    --font-zise--p:20px;
+    --padding-body: 30px;
+    --background-color-fondop:rgb(0, 0, 0);
+    --color-h1--: gold;
+    --color-h2--: rgb(175, 0, 0);
+    --color-span--: gold;
+    --color-span-contacto--: white;
+    --color-span-contactoo--: white;
+    --color-span-subt--: gold;
+    --color-span-contenido--: white;
+    --color-parrafos: rgb(255, 255, 255);
+    --color-clase-redes--: rgb(175, 0, 0);
+    --color-a--: gold;
+    --color-label--: white;
+}
+.subt {
+    color: var(--color-span-subt--);
+}
+.contenido {
+    color: var(--color-span-contenido--)
+}
+.contactoo {
+    color:var(--color-span-contactoo--)
+}
+p {
+    color: var(--color-parrafos);
+    font-size: var(--font-zise--p);
+}
+body {
+    background-color: var(--background-color-fondop); 
+    padding: var(--padding-body);  
+}
+.centrar{
+    width: 100%;
+}
+.centrar img{
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    color: var(--color-h1--);
+}
+h2 {
+    color: rgb(175, 0, 0);
+}
+span {
+    color:var(--color-span--);
+}
+.contacto{
+    color: var(--color-span-contacto--);
+}
+.redes {
+    color: var(--color-clase-redes--);
+}
+label {
+    color: var(--color-label--);
+}
+a {
+    color: var(--color-a--);    
+}
+
+ p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+h1 {
+    color: rgb(175, 0, 0);
+    font-size: 55px;
+}
+h2 { 
+    color: rgb(175, 0, 0);
+}
+h3 {
+    color: rgb(175, 0, 0);
+}
+body {
+    background-color:  rgb(0, 0, 0);
+}
+ul {
+    color: aliceblue;
+}
+form {
+    color: aliceblue;
+}
+a {
+    color: gold;
+}
+span {
+    color: gold;
+}
+.redes {
+    color: rgb(175, 0, 0);
+} 
