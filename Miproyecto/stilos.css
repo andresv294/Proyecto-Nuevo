@@ -1,7 +1,7 @@
 
 nav ul li{
     display: inline-block;
-    background: rgba(8, 47, 131, 0.952);
+    background: green;
     padding: 15px 15px;
     list-style: none;
     border-radius: 5px;
